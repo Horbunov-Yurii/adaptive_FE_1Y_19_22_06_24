@@ -279,22 +279,43 @@ h1, h2, h3, p {
 }
 
 .advant {
-  padding-top: 94px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .advant {
+    padding-top: 94px;
+  }
 }
 .advant__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .advant__item::before {
   content: "";
   margin-bottom: 30px;
   display: block;
-  width: 270px;
+  width: 100%;
   height: 120px;
   border-radius: 4px;
   background-color: #f5f4fa;
   background-position: center;
   background-repeat: no-repeat;
+}
+@media screen and (min-width: 480px) {
+  .advant__item::before {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advant__item::before {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advant__item::before {
+    width: 270px;
+  }
 }
 .advant__item:first-child::before {
   background-image: url(../img/antenna.png);
@@ -316,19 +337,47 @@ h1, h2, h3, p {
   letter-spacing: 0.42px;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .advant__title {
+    text-align: start;
+  }
 }
 .advant__text {
+  width: 100%;
   color: #757575;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.4px;
 }
+@media screen and (min-width: 480px) {
+  .advant__text {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advant__text {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advant__text {
+    width: 270px;
+  }
+}
 
 .work {
+  display: none;
   padding-top: 94px;
   padding-bottom: 94px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+  }
 }
 .work__title {
   color: #212121;
