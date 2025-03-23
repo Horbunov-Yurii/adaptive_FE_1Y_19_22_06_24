@@ -631,6 +631,14 @@ h1, h2, h3, p {
 .footer > .container {
   display: flex;
   align-items: first baseline;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .footer > .container {
+    flex-direction: row;
+  }
 }
 .footer__wrapper {
   width: 235px;
@@ -638,10 +646,16 @@ h1, h2, h3, p {
 .footer__logo {
   color: #fff;
   font-family: "Raleway";
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.38;
-  letter-spacing: 0.78px;
+  letter-spacing: 0.72px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__logo {
+    font-size: 26px;
+    letter-spacing: 0.78px;
+  }
 }
 .footer__color {
   color: #2196f3;
@@ -650,8 +664,15 @@ h1, h2, h3, p {
   font-style: normal;
   margin-top: 20px;
 }
-.footer__box {
-  margin-left: 70px;
+@media screen and (min-width: 768px) {
+  .footer__box {
+    margin-left: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__box {
+    margin-left: 70px;
+  }
 }
 .footer__position {
   color: #fff;
@@ -725,7 +746,14 @@ h1, h2, h3, p {
 .footer__form {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 20px;
+  flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .footer__form {
+    flex-direction: row;
+    gap: 12px;
+  }
 }
 .footer__input {
   color: rgba(255, 255, 255, 0.6);
