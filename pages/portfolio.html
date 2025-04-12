@@ -142,7 +142,15 @@
                 </li>
                 <li class="card__item">
                   <div class="card__box">
-                    <img src="../img/prime.jpg" alt="prime" class="card__img">
+                    <picture>
+
+                    <source srcset="../img/desktop/prime-desktop@1x.webp 1x, ../img/desktop/prime-desktop@2x.webp 2x" media="(min-width:1200px)">
+                    <source srcset="../img/tablet/prime-tablet@1x.webp 1x, ../img/tablet/prime-tablet@2x.webp 2x" media="(min-width:768px)">
+                    <source srcset="../img/mobile/prime-mobile@1x.webp 1x, ../img/mobile/prime-mobile@2x.webp 2x" media="(max-width:767px)">
+
+<img src="../img/prime.jpg" alt="prime" class="card__img">
+                    </picture>
+                    
                     <p class="card__desk">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
                     <div class="card__wrap">
